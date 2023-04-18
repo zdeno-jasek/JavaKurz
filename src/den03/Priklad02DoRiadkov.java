@@ -12,8 +12,16 @@ public class Priklad02DoRiadkov {
 	 * k
 	 * u
 	 * s
+	 * 
+	 * Pomôcka:
+	 * 	charAt(x) - vráti znak na pozícii x
+	 *  length() - vráti počet znakov v stringu
 	 */
 	public static void main(String[] args) {
-		String slovo = "pokus";
+		String slovo = "Na nejaký iný text";
+
+		for (int i = 0; i < slovo.length(); i++) {
+			System.out.println( slovo.charAt(i) );			
+		}
 	}
 }
