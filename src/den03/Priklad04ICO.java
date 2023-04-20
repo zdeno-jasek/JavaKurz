@@ -11,7 +11,7 @@ public class Priklad04ICO {
 	 * Vstup: 12345678
 	 * výstup: je to IČO
 
-	 * Vstup: 12345d
+	 * Vstup: 12345d78
 	 * výstup: nie je to IČO
 	 * 
 	 * Treba použiť metódu Character.isDigit(), ktorá vie pre daný znak rozhodnúť,
@@ -19,12 +19,21 @@ public class Priklad04ICO {
 	 * 
 	 */
 	public static void main(String[] args) {
-		String vstup = "1s345678";
+		String vstup = "1234fff8";
 		
-		if ( Character.isDigit( vstup.charAt(0) ) ) {
-			System.out.println("Je to cislo");
+		if ( vstup.length() == 8 ) {
+			// System.out.println( "Je to IČO");
+			String vypis = "Je to IČO";
+			for (int i = 0; i < vstup.length(); i++) {
+				if ( ! Character.isDigit( vstup.charAt(i) ) ) {
+					vypis = "Nie je to IČO";
+				}
+			}
+			System.out.println(vypis);
 		} else {
-			System.out.println( "Nie je to cislo");
+			// vstup.length() != 8
+			System.out.println( "Nie je to IČO");
 		}
+		System.out.println("KONIEC");
 	}
 }
