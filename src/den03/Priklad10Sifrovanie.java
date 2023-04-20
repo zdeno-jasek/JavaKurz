@@ -18,6 +18,7 @@ public class Priklad10Sifrovanie {
 		System.out.println( c );
 		
 		System.out.println( "Text na zasifrovanie je " + textNaZasifrovanie);
+		// TODO
 		System.out.println( "Zasifrovany text je " + zasifrovanyText);
 	}
 }
