@@ -1,8 +1,9 @@
 package den05pole;
 
+// ÚLOHA
 public class Priklad07MergeSort {
 
-	/**
+	/*
 	 * Program zoberie dve usporiadané polia a spojí ich prvky dohromady tak,
 	 * aby výsledkom bolo znovu usporiadané pole.
 	 */

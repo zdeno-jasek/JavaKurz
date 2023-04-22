@@ -5,7 +5,7 @@ import java.util.Arrays;
 // VYSVETLENIE
 public class Priklad05NafukovaciePole {
 
-	/**
+	/*
 	 * Program vytvorí nové pole, ktoré obsahuje rovnaké hodnoty ako predošlé,
 	 * ale plus ešte jednu novú hodnotu navyše.
 	 */

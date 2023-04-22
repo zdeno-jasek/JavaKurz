@@ -1,5 +1,6 @@
 package den05pole;
 
+// ÚLOHA
 public class Priklad09Kreslenie {
 
 	/*
