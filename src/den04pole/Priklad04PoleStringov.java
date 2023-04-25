@@ -16,8 +16,8 @@ public class Priklad04PoleStringov {
 		String[] priezviska = { "Široký", "Dlhý", "Bystrozraký", "Krátky", "Úzky", "Ďalekozraký" };
 		
 		// TODO zmenit program tak, aby boli mena naozaj nahodne
-		String nahodneMeno = mena[2];
-		String nahodnePriezvisko = priezviska[3];
+		String nahodneMeno = mena[ (int) (Math.random() * mena.length) ];
+		String nahodnePriezvisko = priezviska[ (int) (Math.random() * priezviska.length) ];
 		
 		System.out.println( String.format( "Vymyslel som meno %s %s. Pekné, že?", nahodneMeno, nahodnePriezvisko));
 	}
