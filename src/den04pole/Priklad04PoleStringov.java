@@ -19,6 +19,10 @@ public class Priklad04PoleStringov {
 		String nahodneMeno = mena[ (int) (Math.random() * mena.length) ];
 		String nahodnePriezvisko = priezviska[ (int) (Math.random() * priezviska.length) ];
 		
-		System.out.println( String.format( "Vymyslel som meno %s %s. Pekné, že?", nahodneMeno, nahodnePriezvisko));
+		System.out.println( String.format( "Vymyslel som meno %s %s. Mal som na výber z %d mien a %d priezvisk.",
+				nahodneMeno, nahodnePriezvisko, mena.length, priezviska.length ) );
+		
+		
+		System.out.println( "Vymyslel som meno "+nahodneMeno+" "+nahodnePriezvisko+". Pekné, že?");
 	}
 }
