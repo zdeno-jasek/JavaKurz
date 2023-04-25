@@ -10,7 +10,7 @@ public class Priklad01PoleParnychCiselRiesenie {
 	 * Výstup: 2, 4
 	 */
 	public static void main(String[] args) {
-		int[] pole = { 7, 12, 5, 32, 1, 22 };
+		int[] pole = { 7, 12, 4, 32, 1, 22 };
 
 		// Najprv zistím, koľko mám v poli párnych čísel
 		int pocetParnychCisel = 0;
