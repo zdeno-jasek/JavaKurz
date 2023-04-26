@@ -14,7 +14,26 @@ public class Priklad07MergeSort {
 
 		int[] vysledok = new int[ prvePole.length + druhePole.length ];
 		
-		// TODO
+		int indexPrvy = 0;
+		int indexDruhy = 0;
+		int indexVysledok = 0;
+
+		while ( indexPrvy + indexDruhy < vysledok.length ) {
+			// najprv je osetrenie hranic, aby sa nestalo, ze index > dlzka pola
+			if ( indexPrvy >= prvePole.length ) {
+				// prve pole sa uz minulo
+				vysledok[indexVysledok++] = druhePole[indexDruhy++];				
+			} else if ( indexDruhy >= druhePole.length ) {
+				// druhe pole sa uz minulo
+				vysledok[indexVysledok++] = prvePole[indexPrvy++];				
+			} else 
+				// porovnanie prvkov a vybranie najmensieho
+			if ( prvePole[indexPrvy] <= druhePole[indexDruhy] ) {
+				vysledok[indexVysledok++] = prvePole[indexPrvy++];
+			} else {
+				vysledok[indexVysledok++] = druhePole[indexDruhy++];
+			}
+		}
 		
 		for (int hodnota : vysledok) {
 			System.out.println(hodnota);
